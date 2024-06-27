@@ -1,0 +1,100 @@
+.button {
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.button-primary {
+  background-color: #1d4ed8;
+  color: #fff;
+}
+
+.button-primary:hover {
+  background-color: #153691;
+}
+
+.button-secondary {
+  background-color: #24943a;
+  color: #fff;
+}
+
+.button-secondary:hover {
+  background-color: #3f8055;
+}
+
+.button-tertiary {
+  background-color: #a00000;
+  color: #fff;
+}
+
+.button-tertiary:hover {
+  background-color: #7a0000;
+}
+
+.button-medium {
+  padding: 8px 16px;
+  font-size: 1.3rem;
+}
+
+.button-small {
+  font-weight: 500;
+  padding: 0.625rem 1.25rem;
+  font-size: 0.875rem;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  background-color: #e4e4e4;
+  color: #333;
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.button-spinner {
+  -webkit-animation: rotating 2s linear infinite;
+  -moz-animation: rotating 2s linear infinite;
+  -ms-animation: rotating 2s linear infinite;
+  -o-animation: rotating 2s linear infinite;
+  animation: rotating 2s linear infinite;
+}
+
+.header-authenticated {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.header-authenticated-name {
+  font-weight: 500;
+  font-size: 1.6rem;
+}

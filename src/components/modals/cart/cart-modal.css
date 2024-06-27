@@ -1,0 +1,100 @@
+.modal-container {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.modal-box {
+  width: 90%;
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0px 20px;
+}
+
+.modal-body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  height: 400px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-close-icon {
+  background-color: transparent;
+  border: none;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.cart-item-image {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.cart-item {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 2fr 1fr;
+  text-align: center;
+  align-items: center;
+}
+
+.delete-icon {
+  background-color: transparent;
+  border: none;
+  font-weight: 600;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.delete-icon:hover {
+  background-color: transparent;
+  border: none;
+  font-weight: 600;
+  font-size: 2rem;
+  cursor: pointer;
+  color: red;
+}
+
+.cart-product-price {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subtotal {
+  font-size: 1.5rem;
+}
+
+.subtotal-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+}

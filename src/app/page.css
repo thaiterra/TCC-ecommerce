@@ -1,0 +1,6 @@
+.container {
+  margin: 12px;
+  display: flex;
+  flex-direction: column;
+  padding: 12px 24px;
+}
